@@ -1,0 +1,202 @@
+//
+// Variables
+// --------------------------------------------------
+
+//
+// Colors
+//
+
+$color-brand:                           #d22130 !default;
+$color-white:                           #fff !default;
+$color-gray:                            #848484 !default;
+$color-silver:                          #e1e1e1 !default;
+$color-black:                           #161616 !default;
+
+//
+// Typography
+//
+
+$font-family-sans-serif:                "Open Sans", sans-serif !default;
+$font-size-base:                        13px !default;
+$text-color:                            #333 !default;
+$body-bg:                               #fff !default;
+
+$link-color:                            darken($text-color, 4%) !default;
+$link-hover-color:                      $color-brand !default;
+
+$headings-font-weight:                  600 !default;
+$headings-line-height:                  1.2 !default;
+
+//
+// Scaffolding
+//
+
+$hr-border:                             lighten($color-silver, 4%) !default;
+
+//
+// Aspect 16x9
+//
+
+$aspect-16x9-bg:                        #000 !default;
+
+//
+// Container
+//
+
+$container-large-desktop:               970px !default;
+
+//
+// Navbar
+//
+
+$navbar-inverse-bg:                     $color-brand !default;
+$navbar-inverse-border:                 darken($navbar-inverse-bg, 1%) !default;
+$navbar-inverse-link-font-size:         ($font-size-base - 1) !default;
+$navbar-inverse-link-font-weight:       $headings-font-weight !default;
+$navbar-inverse-link-color:             darken($color-white, 4%) !default;
+$navbar-inverse-link-hover-color:       $color-white !default;
+$navbar-inverse-link-hover-bg:          rgba($color-white, 0.1) !default;
+$navbar-inverse-link-active-color:      $color-white !default;
+$navbar-inverse-link-active-bg:         darken($navbar-inverse-bg, 4%) !default;
+$navbar-inverse-toggle-hover-bg:        transparent !default;
+$navbar-inverse-toggle-border-color:    transparent !default;
+
+//
+// Masthead
+//
+
+$masthead-color:                        $color-gray !default;
+$masthead-bg:                           $color-black !default;
+$masthead-link-color:                   $color-white !default;
+$masthead-link-hover-color:             $color-white !default;
+
+//
+// Play
+//
+
+$play-width:                            120px !default;
+$play-height:                           120px !default;
+$play-font-size:                        ($font-size-base + 50) !default;
+$play-color:                            $color-white !default;
+$play-bg:                               rgba(#000, 0.6) !default;
+
+$play-small-width:                      ($play-width / 2) !default;
+$play-small-height:                     ($play-height / 2) !default;
+$play-small-font-size:                  ($play-font-size / 2) !default;
+
+//
+// Nav arrows
+//
+
+$nav-arrows-height:                     44px !default;
+$nav-arrows-font-size:                  ($font-size-base + 20) !default;
+$nav-arrows-link-color:                 rgba($color-white, 0.8) !default;
+$nav-arrows-link-hover-color:           $color-white !default;
+
+//
+// Post
+//
+
+$post-entry-title-font-size:            ($font-size-base + 2) !default;
+$post-entry-title-large-font-size:      ($font-size-base + 6) !default;
+$post-entry-meta-font-size:             ($font-size-base - 1) !default;
+$post-entry-meta-link-color:            $color-gray !default;
+$post-entry-footer-font-size:           ($font-size-base - 1) !default;
+$post-entry-footer-link-color:          $color-gray !default;
+
+//
+// About author
+//
+
+$about-author-info-color:               darken($color-gray, 4%) !default;
+
+//
+// Comments
+//
+
+$comments-title-font-size:              $font-size-base !default;
+$comments-border:                       lighten($color-silver, 4%) !default;
+$comments-meta-font-size:               ($font-size-base - 1) !default;
+$comments-meta-link-color:              darken($color-gray, 4%) !default;
+$comments-replay-font-size:             ($font-size-base - 2) !default;
+
+//
+// Sidebar
+//
+
+$sidebar-border:                        $color-silver !default;
+
+//
+// Heading
+//
+
+$heading-font-size:                     $font-size-base !default;
+$heading-border:                        $color-brand !default;
+
+//
+// Play
+//
+
+$play-width:                            120px !default;
+$play-height:                           120px !default;
+$play-font-size:                        ($font-size-base + 50) !default;
+$play-color:                            $color-white !default;
+$play-bg:                               rgba(#000, 0.6) !default;
+$play-small-width:                      ($play-width / 2) !default;
+$play-small-height:                     ($play-height / 2) !default;
+$play-small-font-size:                  ($play-font-size / 2) !default;
+
+//
+// Form
+//
+
+$input-border-radius:                   2px !default;
+$input-border-focus:                    lighten($color-gray, 4%) !default;
+
+//
+// Buttons
+//
+
+$btn-font-size:                         ($font-size-base - 1) !default;
+$btn-border-radius-base:                2px !default;
+
+$btn-default-color:                     $color-white !default;
+$btn-default-bg:                        $color-black !default;
+$btn-default-border:                    $btn-default-bg !default;
+
+//
+// Footer
+//
+
+$footer-color:                          $color-silver !default;
+$footer-link-color:                     $color-white !default;
+$footer-top-bg:                         lighten($color-black, 2%) !default;
+$footer-bottom-bg:                      lighten($footer-top-bg, 2%) !default;
+
+//
+// Owl Carousel
+//
+
+$nav-color:                             $color-white !default;
+$nav-color-hover:                       $color-white !default;
+$nav-font-size:                         $font-size-base !default;
+$nav-rounded:                           3px !default;
+$nav-margin:                            5px !default;
+$nav-padding:                           4px 8px !default;
+$nav-background:                        $color-gray !default;
+$nav-background-hover:                  $color-brand !default;
+$nav-disabled-opacity:                  0.5 !default;
+
+$dot-width:                             10px !default;
+$dot-height:                            10px !default;
+$dot-rounded:                           50% !default;
+$dot-margin:                            0 5px !default;
+$dot-background:                        $color-gray !default;
+$dot-background-active:                 $color-brand !default;
+
+//
+// Paths
+//
+
+$img-path:                              "../img" !default;
+$fonts-path:                            "../fonts" !default;

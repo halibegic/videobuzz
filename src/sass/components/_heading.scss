@@ -1,0 +1,14 @@
+//
+// Heading
+// --------------------------------------------------
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 4px 8px;
+    font-size: $heading-font-size;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border-left: 3px solid $heading-border;
+}

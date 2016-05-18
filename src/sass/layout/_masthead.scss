@@ -1,0 +1,17 @@
+//
+// Masthead
+// --------------------------------------------------
+
+.masthead {
+    color: $masthead-color;
+    background-color: $masthead-bg;
+
+    a {
+        color: $masthead-link-color;
+
+        &:hover,
+        &:focus {
+            color: $masthead-link-hover-color;
+        }
+    }
+}

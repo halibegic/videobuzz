@@ -1,0 +1,50 @@
+//
+// Nav arrows
+// --------------------------------------------------
+
+.nav-arrows {
+
+    .nav-previous,
+    .nav-next {
+        display: none;
+
+        > a {
+            position: absolute;
+            top: 50%;
+            margin-top: -($nav-arrows-height / 2);
+            height: $nav-arrows-height;
+            line-height: $nav-arrows-height;
+            font-size: $nav-arrows-font-size;
+            color: $nav-arrows-link-color;
+            @include transition(all, .2s, linear);
+
+            &:hover,
+            &:focus {
+                color: $nav-arrows-link-hover-color;
+                @include scale(1.2);
+            }
+        }
+    }
+
+    .nav-previous {
+        > a {
+            left: 0;
+
+            &:before {
+                @include icon;
+                @include icon-left-open-big;
+            }
+        }
+    }
+
+    .nav-next {
+        > a {
+            right: 0;
+
+            &:before {
+                @include icon;
+                @include icon-right-open-big;
+            }
+        }
+    }
+}

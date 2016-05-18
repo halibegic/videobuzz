@@ -1,0 +1,26 @@
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+    color: $footer-color;
+
+    a {
+        color: $footer-link-color;
+    }
+
+    .footer-top {
+        background: $footer-top-bg;
+    }
+
+    .footer-bottom {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: $footer-bottom-bg;
+    }
+
+    .widget {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

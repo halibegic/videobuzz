@@ -1,0 +1,36 @@
+
+//
+// Play
+// --------------------------------------------------
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -($play-height / 2);
+    margin-left: -($play-width / 2);
+    width: $play-width;
+    height: $play-height;
+    line-height: $play-height;
+    font-size: $play-font-size;
+    text-align: center;
+    color: $play-color;
+    background-color: $play-bg;
+    border-radius: 50%;
+    @include opacity(0);
+    @include transition(all, .2s, linear);
+
+    &:before {
+        @include icon;
+        @include icon-play;
+    }
+
+    &.play-small {
+        margin-top: -($play-small-height / 2);
+        margin-left: -($play-small-width / 2);
+        width: $play-small-width;
+        height: $play-small-height;
+        line-height: $play-small-height;
+        font-size: $play-small-font-size;
+    }
+}

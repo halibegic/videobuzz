@@ -1,0 +1,41 @@
+//
+// Icons
+// --------------------------------------------------
+
+@font-face {
+    font-family: 'fontello';
+    src: url('#{$fonts-path}/fontello.eot?60281534');
+    src: url('#{$fonts-path}/fontello.eot?60281534#iefix') format('embedded-opentype'),
+       url('#{$fonts-path}/fontello.woff2?60281534') format('woff2'),
+       url('#{$fonts-path}/fontello.woff?60281534') format('woff'),
+       url('#{$fonts-path}/fontello.ttf?60281534') format('truetype'),
+       url('#{$fonts-path}/fontello.svg?60281534#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'fontello';
+        src: url('#{$fonts-path}/fontello.svg?60281534#fontello') format('svg');
+    }
+}
+
+.icon:before {
+    @include icon;
+}
+
+.icon-left-open-big:before {
+    @include icon-left-open-big;
+}
+
+.icon-right-open-big:before {
+    @include icon-right-open-big;
+}
+
+.icon-play:before {
+    @include icon-play;
+}

@@ -1,0 +1,22 @@
+//
+// Sidebar
+// --------------------------------------------------
+
+.sidebar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    ul {
+        padding-left: 15px;
+        li {
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .widget {
+        margin-bottom: 30px;
+    }
+}

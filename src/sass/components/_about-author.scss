@@ -1,0 +1,24 @@
+//
+// About author
+// --------------------------------------------------
+
+.about-author {
+    @include clearfix();
+
+	.author-avatar {
+        float: left;
+        width: 80px;
+	}
+
+    .author-info {
+        margin-left: 80px;
+
+        h5 {
+            margin-top: 0;
+        }
+        
+        span {
+            color: $about-author-info-color;
+        }
+    }
+}

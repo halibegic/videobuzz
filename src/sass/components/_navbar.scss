@@ -1,0 +1,13 @@
+//
+// Navbar
+// --------------------------------------------------
+
+.navbar {
+    margin-bottom: 0;
+
+    .navbar-nav > li > a {
+        font-size: $navbar-inverse-link-font-size;
+        font-weight: $navbar-inverse-link-font-weight;
+        text-transform: uppercase;
+    }
+}

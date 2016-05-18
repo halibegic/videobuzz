@@ -1,0 +1,41 @@
+//
+// Carousel
+// --------------------------------------------------
+
+.carousel {
+    margin: 30px 0;
+
+    &.owl-theme {
+        display: block;
+
+        .owl-nav.disabled+.owl-dots {
+            margin-top: 0;
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            line-height: 15px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .post {
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+
+        .entry-title {
+            margin-top: 0;
+            font-size: ($post-entry-meta-font-size * 1.8)
+        }
+
+        .play {
+            @include opacity(1);
+        }
+    }
+}

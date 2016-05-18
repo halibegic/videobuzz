@@ -1,0 +1,43 @@
+//
+// Responsive utilities
+// --------------------------------------------------
+
+@media (min-width: $screen-md-min) {
+
+    .nav-arrows {
+
+        .nav-previous,
+        .nav-next {
+            display: block;
+        }
+    }
+
+    .nav-links {
+        .nav-next {
+            text-align: right;
+        }
+    }
+
+    .sidebar {
+        padding-left: 30px;
+        border-left: 1px solid $sidebar-border;
+    }
+}
+
+@media (max-width: $screen-xs-min) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+//
+// Show/Hide xs
+//
+
+@include responsive-invisibility('.visible-xs');
+
+@media (max-width: $screen-xs-max) {
+
+    @include responsive-visibility('.visible-xs');
+}

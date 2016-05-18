@@ -1,0 +1,70 @@
+//
+// Post
+// --------------------------------------------------
+
+.post {
+    position: relative;
+    margin-bottom: 30px;
+
+    &:hover,
+    &:focus {
+        .play {
+            @include opacity(1);
+        }
+    }
+
+    .entry-title {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: $post-entry-title-font-size;
+        letter-spacing: -0.02em;
+
+        &.entry-title-large {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: $post-entry-title-large-font-size;
+        }
+    }
+
+    .entry-meta {
+        margin-top: 5px;
+        font-size: $post-entry-meta-font-size;
+
+        a {
+            color: $post-entry-meta-link-color;
+        }
+
+        > span {
+            margin-right: 5px;
+        }
+    }
+
+    .entry-excerpt {
+        margin-top: 15px;
+
+        > p {
+            margin-bottom: 0;
+        }
+    }
+
+    .entry-content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        > p {
+            margin-bottom: 0;
+        }
+    }
+
+    .entry-footer {
+        font-size: $post-entry-footer-font-size;
+
+        a {
+            color: $post-entry-footer-link-color;
+        }
+
+        > span {
+            margin-right: 5px;
+        }
+    }
+}

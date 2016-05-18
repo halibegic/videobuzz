@@ -1,0 +1,21 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+a {
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: 0 !important;
+    }
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &.fat {
+        border-width: 3px;
+    }
+}
