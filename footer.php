@@ -40,7 +40,7 @@
 			<div class="container">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'videobuzz' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'videobuzz' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'videobuzz' ), 'Video Buzz', '<a href="https://halibegic.info" rel="designer">halibegic</a>' ); ?>
+				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'videobuzz' ), '<a href="https://github.com/halibegic/videobuzz">Video Buzz</a>', '<a href="https://halibegic.info" rel="designer">halibegic</a>' ); ?>
 
 			</div><!-- .container -->
 
