@@ -148,6 +148,16 @@ function videobuzz_widgets_init() {
 add_action( 'widgets_init', 'videobuzz_widgets_init' );
 
 /**
+ * Apply theme's stylesheet to the visual editor.
+ *
+ * @uses add_editor_style() Links a stylesheet to visual editor
+ */
+function videobuzz_add_editor_styles() {
+    add_editor_style();
+}
+add_action( 'after_setup_theme', 'videobuzz_add_editor_styles' );
+
+/**
  * Enqueue scripts and styles.
  */
 function videobuzz_scripts() {
