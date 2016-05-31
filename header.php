@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 
-	<div id="main">
+	<div class="main" id="main">
 	
 		<a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'videobuzz' ); ?></a>
 
@@ -59,3 +59,5 @@
 			</nav><!-- .navbar -->
 
 		</header><!-- .header -->
+
+		<div class="wrapper transition-fadein">

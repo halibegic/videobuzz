@@ -52,6 +52,19 @@
 }
 
 //
+// Transitions
+//
+
+.transition-start .transition-fadein {
+    @include opacity(1);
+}
+
+.transition-fadein {
+    @include opacity(0);
+    @include transition(opacity .3s ease-in);
+}
+
+//
 // Hiding text for screen readers
 //
 

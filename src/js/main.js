@@ -4,7 +4,9 @@
 // Carousel
 // --------------------------------------------------
 
-function initCarousel () {
+function initCarousel() {
+
+    var _$el = $('.carousel');
 
     var settings = {
         'items': 1, // The number of items you want to see on the screen.
@@ -12,21 +14,39 @@ function initCarousel () {
         'loop': true // Infinity loop. Duplicate last and first items to get loop illusion.
     };
 
-    $( '.carousel' ).owlCarousel( settings );
+    _$el.owlCarousel(settings);
 }
 
 //
 // SmoothState
 // --------------------------------------------------
 
-function initSmoothState () {
+function initSmoothState() {
+
+    var _$el = $('#main');
 
     var settings = {
-        debug: true
+
+        onStart: {
+            duration: 300,
+            render: function($container) {
+                _$el.removeClass('transition-start').addClass('transition-end');
+            }
+        },
+
+        onAfter: function($container, $content) {
+            _$el.removeClass('transition-end').addClass('transition-start');
+        }
     };
 
-    $( '#main' ).smoothState( settings );
+    _$el.addClass('transition-start');
+
+    _$el.smoothState(settings);
 }
+
+//
+// Ready
+// --------------------------------------------------
 
 $(document).ready(function() {
     initCarousel();

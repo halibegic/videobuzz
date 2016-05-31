@@ -2517,13 +2517,15 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 
 function initCarousel () {
 
+    var _$el = $( '.carousel' );
+
     var settings = {
         'items': 1, // The number of items you want to see on the screen.
         'margin': 30, // Margin-right(px) on item.
         'loop': true // Infinity loop. Duplicate last and first items to get loop illusion.
     };
 
-    $( '.carousel' ).owlCarousel( settings );
+    _$el.owlCarousel( settings );
 }
 
 //
@@ -2532,11 +2534,25 @@ function initCarousel () {
 
 function initSmoothState () {
 
+    var _$el = $( '#main' );
+
     var settings = {
-        debug: true,
+
+        onStart: {
+            duration: 300,
+            render: function($container) {
+                _$el.removeClass('transition-start').addClass('transition-end');
+            }
+        },
+
+        onAfter: function($container, $content) {
+          _$el.removeClass('transition-end').addClass('transition-start');
+        }
     };
 
-    $( '#main' ).smoothState( settings );
+    _$el.addClass('transition-start');
+
+    _$el.smoothState( settings );
 }
 
 $(document).ready(function() {

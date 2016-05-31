@@ -10,45 +10,46 @@
  */
 
 ?>
+			<footer class="footer" role="contentinfo">
 
-		<footer class="footer" role="contentinfo">
+				<div class="footer-top">
 
-			<div class="footer-top">
+					<div class="container">
 
-				<div class="container">
+						<div class="row">
 
-					<div class="row">
+							<?php
+							! is_active_sidebar( 'footer-1' ) || dynamic_sidebar('footer-1');
+							! is_active_sidebar( 'footer-2' ) || dynamic_sidebar('footer-2'); ?>
 
-						<?php
-						! is_active_sidebar( 'footer-1' ) || dynamic_sidebar('footer-1');
-						! is_active_sidebar( 'footer-2' ) || dynamic_sidebar('footer-2'); ?>
+							<div class="clearfix visible-xs"></div>
 
-						<div class="clearfix visible-xs"></div>
+							<?php
+							! is_active_sidebar( 'footer-3' ) || dynamic_sidebar('footer-3');
+							! is_active_sidebar( 'footer-4' ) || dynamic_sidebar('footer-4'); ?>
 
-						<?php
-						! is_active_sidebar( 'footer-3' ) || dynamic_sidebar('footer-3');
-						! is_active_sidebar( 'footer-4' ) || dynamic_sidebar('footer-4'); ?>
+						</div><!-- .row -->
 
-					</div><!-- .row -->
+					</div><!-- .container -->
 
-				</div><!-- .container -->
+				</div><!-- .footer-top -->
 
-			</div><!-- .footer-top -->
+				<div class="footer-bottom">
 
-			<div class="footer-bottom">
+					<div class="container">
+						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'videobuzz' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'videobuzz' ), 'WordPress' ); ?></a>
+						<span class="sep"> | </span>
+						<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'videobuzz' ), 'Video Buzz', '<a href="https://halibegic.info" rel="designer">halibegic</a>' ); ?>
 
-				<div class="container">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'videobuzz' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'videobuzz' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'videobuzz' ), 'Video Buzz', '<a href="https://halibegic.info" rel="designer">halibegic</a>' ); ?>
+					</div><!-- .container -->
 
-				</div><!-- .container -->
+				</div><!-- .footer-bottom -->
 
-			</div><!-- .footer-bottom -->
+			</footer><!-- .footer -->
 
-		</footer><!-- .footer -->
+		</div><!-- .wrapper -->
 
-	</div><!-- #main -->
+	</div><!-- .main -->
 
 	<?php wp_footer(); ?>
 
