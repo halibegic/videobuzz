@@ -24,6 +24,7 @@
     "bootstrap-sass": "^3.3.6",
     "bootstrap": "^3.3.6",
     "jquery": "^2.2.1",
-    "owl.carousel": "^2.0.0-beta.3"
+    "owl.carousel": "^2.0.0-beta.3",
+    "smoothstate": "miguel-perez/smoothState.js#^0.7.2"
   }
 }

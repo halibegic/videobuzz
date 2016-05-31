@@ -21,39 +21,41 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+	<div id="main">
 	
-	<a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'videobuzz' ); ?></a>
+		<a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'videobuzz' ); ?></a>
 
-	<header class="header" role="banner">
+		<header class="header" role="banner">
 
-		<nav class="navbar navbar-inverse navbar-static-top">
+			<nav class="navbar navbar-inverse navbar-static-top">
 
-		    <div class="container">
+			    <div class="container">
 
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse" aria-expanded="false" aria-controls="navbar">
-			            <span class="sr-only">Toggle navigation</span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-		            </button>
-		            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-		        </div><!-- .navbar-header -->
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse" aria-expanded="false" aria-controls="navbar">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			        </div><!-- .navbar-header -->
 
-		        <?php
-		        	wp_nav_menu(
-		        		array(
-	                        'theme_location' => 'primary',
-	                        'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
-	                        'menu_class' => 'nav navbar-nav navbar-right',
-	                        'fallback_cb' => '',
-	                        'menu_id' => 'primary-menu',
-	                        'walker' => new wp_bootstrap_navwalker()
-		        		)
-	        		); ?>
+			        <?php
+			        	wp_nav_menu(
+			        		array(
+		                        'theme_location' => 'primary',
+		                        'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
+		                        'menu_class' => 'nav navbar-nav navbar-right',
+		                        'fallback_cb' => '',
+		                        'menu_id' => 'primary-menu',
+		                        'walker' => new wp_bootstrap_navwalker()
+			        		)
+		        		); ?>
 
-		    </div><!-- .container -->
+			    </div><!-- .container -->
 
-		</nav><!-- .navbar -->
+			</nav><!-- .navbar -->
 
-	</header><!-- .header -->
+		</header><!-- .header -->

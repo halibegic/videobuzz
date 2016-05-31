@@ -12,6 +12,7 @@ module.exports = function(grunt) {
                     'bower_components/bootstrap/js/transition.js',
                     'bower_components/owl.carousel/src/js/owl.carousel.js',
                     'bower_components/owl.carousel/src/js/owl.navigation.js',
+                    'bower_components/smoothstate/jquery.smoothState.min.js',
                     'src/js/main.js',
                 ],
                 dest: 'dist/js/main.js'
