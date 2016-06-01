@@ -26,14 +26,14 @@ function initSmoothState() {
     var _$el = $('#main');
 
     var settings = {
-
+        prefetch: true,
+        pageCacheSize: 8,
         onStart: {
             duration: 300,
             render: function($container) {
                 _$el.removeClass('transition-start').addClass('transition-end');
             }
         },
-
         onAfter: function($container, $content) {
             _$el.removeClass('transition-end').addClass('transition-start');
         }
