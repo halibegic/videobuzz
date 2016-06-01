@@ -26,6 +26,7 @@ function initSmoothState() {
     var _$el = $('#main');
 
     var settings = {
+        blacklist: '.comment-reply-link',
         prefetch: true,
         pageCacheSize: 8,
         onStart: {
@@ -36,6 +37,7 @@ function initSmoothState() {
         },
         onAfter: function($container, $content) {
             _$el.removeClass('transition-end').addClass('transition-start');
+            initCarousel(); // reinitilize
         }
     };
 
