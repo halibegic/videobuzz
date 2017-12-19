@@ -214,3 +214,9 @@ require get_template_directory() . '/inc/post-settings.php';
  * Load custom comments.
  */
 require get_template_directory() . '/inc/custom-comments.php';
+
+/**
+ * Load custom API fields.
+ */
+require get_template_directory() . '/inc/api-fields.php';
+
