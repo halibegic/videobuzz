@@ -19,6 +19,6 @@ Clean and simple WordPress video theme
 
 ### Copyright and License
 
-Copyright 2016 [Hasan Alibegić](https://halibegic.info/)
+Copyright 2018 [Hasan Alibegić](https://halibegic.info/)
 
 GNU General Public License v2 or later. [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
